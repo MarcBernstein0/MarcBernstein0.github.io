@@ -1,7 +1,7 @@
-import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { createTheme, CssBaseline, Grid, ThemeProvider } from '@mui/material';
 import { blueGrey, grey } from '@mui/material/colors';
-import ResponsiveAppBar from './components/ResponsiveAppBar';
-import ScrollingBackground from './components/ScrollingBackground';
+import ResponsiveAppBar from './components/Nav/ResponsiveAppBar';
+import ProfileImage from './components/ProfileImage/ProfileImage';
 
 const darkTheme = createTheme({
   palette: {
@@ -25,6 +25,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <ResponsiveAppBar />
+      <ProfileImage />
       {/* <ScrollingBackground /> */}
     </ThemeProvider>
   );
