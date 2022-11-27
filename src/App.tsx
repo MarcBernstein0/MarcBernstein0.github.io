@@ -31,23 +31,6 @@ function App() {
           marginTop: "3%",
         }}>
           <AnimatedText />
-          <Box
-            component="h2"
-            display="flex"
-            justifyContent="right"
-            sx={{
-              fontSize: "x-large",
-              margin: "auto",
-              paddingRight: "2%"
-            }}
-          >
-            Research Software Engineer @ Northeastern University
-          </Box>
-          <h2
-            style={{
-
-            }}
-          ></h2>
         </Grid>
         <Grid item xs={6} sx={{
           marginTop: "3%"
