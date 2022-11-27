@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-
+import { TypeAnimation } from "react-type-animation";
 
 export default function AnimatedText(): JSX.Element {
   return (
@@ -8,12 +8,18 @@ export default function AnimatedText(): JSX.Element {
       display="flex"
       justifyContent="center"
       sx={{
-        fontSize: "xx-large",
+        fontSize: "xxx-large",
         margin: "auto",
-        paddingTop: "10%"
+        paddingTop: "15%",
+        paddingRight: "5%"
       }}
     >
-      Hi! I'm Marc Bernstein
+      <TypeAnimation 
+        sequence={[
+          "Hi! I'm Marc Bernstein",
+        ]}
+        speed={40}
+      />
     </Box>
   );
 }

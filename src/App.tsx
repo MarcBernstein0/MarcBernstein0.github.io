@@ -1,5 +1,6 @@
-import { createTheme, CssBaseline, Grid, ThemeProvider } from '@mui/material';
+import { Box, createTheme, CssBaseline, Grid, ThemeProvider } from '@mui/material';
 import { blueGrey, grey } from '@mui/material/colors';
+import AnimatedText from './components/AnimatedText/AnimatedText';
 import ResponsiveAppBar from './components/Nav/ResponsiveAppBar';
 import ProfileImage from './components/ProfileImage/ProfileImage';
 
@@ -25,7 +26,36 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <ResponsiveAppBar />
-      <ProfileImage />
+      <Grid container spacing={2}>
+        <Grid item xs={6} sx={{
+          marginTop: "3%",
+        }}>
+          <AnimatedText />
+          <Box
+            component="h2"
+            display="flex"
+            justifyContent="right"
+            sx={{
+              fontSize: "x-large",
+              margin: "auto",
+              paddingRight: "2%"
+            }}
+          >
+            Research Software Engineer @ Northeastern University
+          </Box>
+          <h2
+            style={{
+
+            }}
+          ></h2>
+        </Grid>
+        <Grid item xs={6} sx={{
+          marginTop: "3%"
+        }}>
+          <ProfileImage />
+        </Grid>
+      </Grid>
+      {/* <ProfileImage /> */}
       {/* <ScrollingBackground /> */}
     </ThemeProvider>
   );
