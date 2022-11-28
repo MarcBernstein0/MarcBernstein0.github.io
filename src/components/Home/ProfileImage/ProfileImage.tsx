@@ -7,7 +7,7 @@ export default function ProfileImage(): JSX.Element {
         component="img"
         className="Image"
         alt="Profile Image"
-        src={require("../../assets/image.jpg")}
+        src={require("../../../assets/image.jpg")}
       />
   );
 }   

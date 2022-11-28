@@ -1,9 +1,12 @@
-import { createTheme, CssBaseline, Grid, ThemeProvider } from '@mui/material';
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { blueGrey, grey } from '@mui/material/colors';
-import AboutMeText from './components/AboutMeText/AboutMeText';
-import AnimatedText from './components/AnimatedText/AnimatedText';
+import { Route, Routes } from 'react-router-dom';
+import Contact from './components/Contact/Contact';
+import Home from './components/Home/Home';
 import ResponsiveAppBar from './components/Nav/ResponsiveAppBar';
-import ProfileImage from './components/ProfileImage/ProfileImage';
+import Projects from './components/Projects/Projects';
+import Resume from './components/Resume/Resume';
+import Skills from './components/Skills/Skills';
 
 const darkTheme = createTheme({
   palette: {
@@ -20,6 +23,7 @@ const darkTheme = createTheme({
     },
   }
 })
+const pages = ['Home', 'Skills', 'Projects', 'Resume', "Contact"];
 
 function App() {
 
@@ -27,19 +31,14 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <ResponsiveAppBar />
-      <Grid container spacing={2}>
-        <Grid item xs={6} sx={{
-          marginTop: "3%",
-        }}>
-          <AnimatedText />
-          <AboutMeText />
-        </Grid>
-        <Grid item xs={6} sx={{
-          marginTop: "3%"
-        }}>
-          <ProfileImage />
-        </Grid>
-      </Grid>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="Skills" element={<Skills />} />
+        <Route path="Projects" element={<Projects />} />
+        <Route path="Resume" element={<Resume />} />
+        <Route path="Contact" element={<Contact />} />
+      </Routes>
+      {/* <Home /> */}
     </ThemeProvider>
   );
 }

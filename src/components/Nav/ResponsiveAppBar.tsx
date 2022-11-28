@@ -11,12 +11,13 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { useState } from 'react';
 import './ResponsiveAppBar.css'
+import { Link } from 'react-router-dom';
 
-const pages = ['About Me', 'Projects', 'Resume', "Contact"];
+const pages = ['Home', 'Skills', 'Projects', 'Resume', "Contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  
+
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -77,7 +78,9 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">
+                    <Link to={page === "Home" ? '/' : `/${page}`}>{page}</Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -106,15 +109,15 @@ function ResponsiveAppBar() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ 
-                  my: 2, 
-                  color: 'white', 
-                  display: 'block', 
+                sx={{
+                  my: 2,
+                  color: 'white',
+                  display: 'block',
                   fontWeight: 700,
-                letterSpacing: '.05rem'
-              }}
+                  letterSpacing: '.05rem'
+                }}
               >
-                {page}
+                <Link to={page === "Home" ? '/' : `/${page}`}>{page}</Link>
               </Button>
             ))}
           </Box>
