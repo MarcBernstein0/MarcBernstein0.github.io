@@ -1,5 +1,6 @@
-import { Box, createTheme, CssBaseline, Grid, ThemeProvider } from '@mui/material';
+import { createTheme, CssBaseline, Grid, ThemeProvider } from '@mui/material';
 import { blueGrey, grey } from '@mui/material/colors';
+import AboutMeText from './components/AboutMeText/AboutMeText';
 import AnimatedText from './components/AnimatedText/AnimatedText';
 import ResponsiveAppBar from './components/Nav/ResponsiveAppBar';
 import ProfileImage from './components/ProfileImage/ProfileImage';
@@ -31,6 +32,7 @@ function App() {
           marginTop: "3%",
         }}>
           <AnimatedText />
+          <AboutMeText />
         </Grid>
         <Grid item xs={6} sx={{
           marginTop: "3%"
@@ -38,8 +40,6 @@ function App() {
           <ProfileImage />
         </Grid>
       </Grid>
-      {/* <ProfileImage /> */}
-      {/* <ScrollingBackground /> */}
     </ThemeProvider>
   );
 }

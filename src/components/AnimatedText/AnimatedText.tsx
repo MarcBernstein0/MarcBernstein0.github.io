@@ -10,8 +10,7 @@ export default function AnimatedText(): JSX.Element {
       sx={{
         fontSize: "xxx-large",
         margin: "auto",
-        paddingTop: "15%",
-        paddingRight: "5%"
+        paddingTop: "15%"
       }}
     >
       <TypeAnimation 
