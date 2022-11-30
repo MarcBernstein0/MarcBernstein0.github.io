@@ -23,7 +23,6 @@ const darkTheme = createTheme({
     },
   }
 })
-const pages = ['Home', 'Skills', 'Projects', 'Resume', "Contact"];
 
 function App() {
 
