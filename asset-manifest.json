@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.efcbe1e1.css",
-    "main.js": "/static/js/main.2d766158.js",
+    "main.css": "/static/css/main.68575c12.css",
+    "main.js": "/static/js/main.cf29d98d.js",
     "static/js/787.5185a4f1.chunk.js": "/static/js/787.5185a4f1.chunk.js",
     "static/media/image.jpg": "/static/media/image.1a5cd44559378f6306e1.jpg",
+    "static/media/Bernstein_Marc_Resume_8_5_2022.pdf": "/static/media/Bernstein_Marc_Resume_8_5_2022.3709c39cc739778555a1.pdf",
     "index.html": "/index.html",
-    "main.efcbe1e1.css.map": "/static/css/main.efcbe1e1.css.map",
-    "main.2d766158.js.map": "/static/js/main.2d766158.js.map",
+    "main.68575c12.css.map": "/static/css/main.68575c12.css.map",
+    "main.cf29d98d.js.map": "/static/js/main.cf29d98d.js.map",
     "787.5185a4f1.chunk.js.map": "/static/js/787.5185a4f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.efcbe1e1.css",
-    "static/js/main.2d766158.js"
+    "static/css/main.68575c12.css",
+    "static/js/main.cf29d98d.js"
   ]
 }
