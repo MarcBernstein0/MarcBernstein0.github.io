@@ -1,14 +1,24 @@
-import { Box } from "@mui/material";
+import { Box, Grid } from "@mui/material";
+import "./Resume.css"
 
 function Resume() {
   return (
-    <Box
-      component="iframe"
-      src={require("./Bernstein_Marc_Resume_8_5_2022.pdf")}
+    <Grid
+      container
+      justifyContent="center"
     >
+      <Box
+        marginTop="3%"
+        component="iframe"
+        title="pdf"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        src={require("../../assets/Bernstein_Marc_Resume_8_5_2022.pdf")}
+        className="Fade-In"
+        />
+    </Grid>
 
-    </Box>
-    // <iframe src={require("./Bernstein_Marc_Resume_8_5_2022.pdf")} width="1000px" height="100%" />
   );
 }
 // /Users/marcbernstein/Documents/projects/personal/MarcBernstein0.github.io/src/assets/Bernstein_Marc_Resume_8_5_2022.pdf

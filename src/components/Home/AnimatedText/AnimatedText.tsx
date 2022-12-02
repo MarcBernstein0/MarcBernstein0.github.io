@@ -10,12 +10,13 @@ export default function AnimatedText(): JSX.Element {
       sx={{
         fontSize: "xxx-large",
         margin: "auto",
-        paddingTop: "15%"
+        paddingTop: "15%",
+        fontWeight: 700
       }}
     >
       <TypeAnimation 
         sequence={[
-          "Hi! I'm Marc Bernstein",
+          "Hi! I'm Marc Bernstein.",
         ]}
         speed={40}
       />
