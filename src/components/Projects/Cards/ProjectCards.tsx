@@ -2,27 +2,35 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, Grid } from '@mui/material';
+import { CardActionArea } from '@mui/material';
 
-export default function ProjectCards() {
+
+interface projectCardProps {
+  projectName: string;
+  link: string;
+  description: string;
+  imageName: string;
+}
+
+export default function ProjectCard({projectName, link, description, imageName} : projectCardProps) {
+  console.log(projectName, imageName)
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea
-        href='https://github.com/MarcBernstein0/challonge-match-display'
+        href={link}
         target="_blank">
         <CardMedia
           component="img"
           height="140"
-          image={require("../../../assets/MATCHDISPLAYLOGO.png")}
-          alt="green iguana"
+          image={require("../../../assets/" + imageName)}
+          alt={{projectName} + " image"}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Match Display
+            {projectName}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            A way to display pending matches for currently running tournaments 
-            being ran by a specific user of the challonge.com
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
