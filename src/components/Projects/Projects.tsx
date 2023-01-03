@@ -1,8 +1,11 @@
-function Projects() {
-    return (
-      <h1>Projects</h1>
-    );
-  }
-  
-  export default Projects;
-  
+import { Grid } from "@mui/material";
+import ProjectCards from "./Cards/ProjectCards";
+
+export default function Projects() {
+  return (
+    <Grid>
+      <ProjectCards />
+    </Grid>
+
+  );
+}
