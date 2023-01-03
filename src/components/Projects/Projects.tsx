@@ -17,9 +17,11 @@ export default function Projects() {
 ]
 
   return (
-    <Grid>
+    <Grid container spacing={0}>
       {projects.map(proj => (
-        <ProjectCard {...proj} />
+        <Grid item xs={3}>
+          <ProjectCard {...proj} />
+        </Grid>
       ))}
     </Grid>
 
