@@ -13,9 +13,11 @@ interface projectCardProps {
 }
 
 export default function ProjectCard({projectName, link, description, imageName} : projectCardProps) {
-  console.log(projectName, imageName)
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ 
+      maxWidth: 345, 
+      maxHeight: 500
+      }}>
       <CardActionArea
         href={link}
         target="_blank">
