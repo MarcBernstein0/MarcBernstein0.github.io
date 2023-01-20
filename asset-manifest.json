@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.68575c12.css",
-    "main.js": "/static/js/main.2898c2fa.js",
+    "main.js": "/static/js/main.0959132b.js",
     "static/js/787.5185a4f1.chunk.js": "/static/js/787.5185a4f1.chunk.js",
     "static/media/image.jpg": "/static/media/image.1a5cd44559378f6306e1.jpg",
-    "static/media/Bernstein_Marc_Resume_8_5_2022.pdf": "/static/media/Bernstein_Marc_Resume_8_5_2022.3709c39cc739778555a1.pdf",
+    "static/media/Marc_Bernstein_Software_Engineering_Resume_1_19_2022.pdf": "/static/media/Marc_Bernstein_Software_Engineering_Resume_1_19_2022.6ecff389982c7277818c.pdf",
     "static/media/MATCHDISPLAYLOGO.png": "/static/media/MATCHDISPLAYLOGO.c6cd8593eede469ca659.png",
     "index.html": "/index.html",
     "main.68575c12.css.map": "/static/css/main.68575c12.css.map",
-    "main.2898c2fa.js.map": "/static/js/main.2898c2fa.js.map",
+    "main.0959132b.js.map": "/static/js/main.0959132b.js.map",
     "787.5185a4f1.chunk.js.map": "/static/js/787.5185a4f1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68575c12.css",
-    "static/js/main.2898c2fa.js"
+    "static/js/main.0959132b.js"
   ]
 }
